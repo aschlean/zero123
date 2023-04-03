@@ -54,7 +54,7 @@ def load_model_from_config(config, ckpt, verbose=False):
     return model
 
 def load_objaverse_model(ckpt_root):
-    ckpt_fname = '../zero123/105000.ckpt'
+    ckpt_fname = '../zero123/165000.ckpt'
     cfg_fname = '../zero123/configs/sd-objaverse-finetune-c_concat-256.yaml'
     H, W = 256, 256
 
