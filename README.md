@@ -47,13 +47,13 @@ Note that this app uses around 22 GB of VRAM, so it may not be possible to run i
 ### 3D Reconstruction
 Note that we haven't extensively tuned the hyperparameters for 3D recosntruction. Feel free to explore and play around!
 ```
-cd 3drec
+cd 3drec 
 pip install -r requirements.txt
 python run_zero123.py \
-    --scene pikachu \
+    --scene extinguisher \
     --index 0 \
     --n_steps 10000 \
-    --lr 0.05 \
+    --lr 0.04 \
     --sd.scale 100.0 \
     --emptiness_weight 0 \
     --depth_smooth_weight 10000. \
