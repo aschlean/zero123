@@ -78,7 +78,7 @@ class SJC(BaseConf):
         blend_bg_texture=False, bg_texture_hw=4,
         bbox_len=1.0
     )
-    pose:       PoseConfig = PoseConfig(rend_hw=256, FoV=49.1, R=2.0)
+    pose:       PoseConfig = PoseConfig(rend_hw=64, FoV=49.1, R=2.0)
 
     emptiness_scale:    int = 10
     emptiness_weight:   int = 0
