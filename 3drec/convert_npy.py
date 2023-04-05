@@ -2,7 +2,7 @@ import numpy as np
 import open3d as o3d
 import os
 
-npy_path = os.path.dirname(__file__)+'/experiments/exp_wild/depth'
+npy_path = os.path.dirname(__file__)+'/experiments/exp_wild/depth/'
 
 def main():
     def convert_npy(npy_path):
