@@ -8,3 +8,4 @@ def convert_npy(npy_path):
         np_image = np.array(open3d.io.read_image(npy_path+"step"+str(i)+".npy"))
         o3d_image=o3d.geometry.Image(np_image)
         o3d.io.write_image(npy_path+"step"+str(i)+".png", o3d_image)
+    return
