@@ -5,8 +5,7 @@ import argparse
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-s", "--steps", default=100, type=int, help="number of depth images to convert",
-                    action="store_const")
+parser.add_argument("-s", "--steps", action="store_const", default=100, type=int, help="number of depth images to convert")
 args = parser.parse_args()
 npy_path = os.path.dirname(__file__)+'/experiments/exp_wild/depth/'
 
