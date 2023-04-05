@@ -1,7 +1,7 @@
 import numpy as np
 import open3d as o3d
 
-npy_path = '../3drec/experiments/exp_wild/depth'
+npy_path = './experiments/exp_wild/depth'
 
 def convert_npy(npy_path):
     for i in range(0, 99):
