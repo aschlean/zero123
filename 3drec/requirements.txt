@@ -8,3 +8,4 @@ matplotlib
 transformers
 PyMCubes
 point-cloud-utils
+open3d
