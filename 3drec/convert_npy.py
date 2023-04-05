@@ -8,7 +8,7 @@ def main():
     def convert_npy(npy_path):
         for i in range(0, 99):
             print(i)
-            np_image = np.array(open(npy_path+"step_"+str(i)+".npy"))
+            np_image = np.load(npy_path+"step_"+str(i)+".npy")
             print(np_image.shape, np_image.dtype)
             o3d_image=o3d.geometry.Image(np_image)
             print(type(o3d_image))
