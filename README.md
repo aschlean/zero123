@@ -50,7 +50,7 @@ Note that we haven't extensively tuned the hyperparameters for 3D recosntruction
 cd 3drec 
 pip install -r requirements.txt
 python run_zero123.py \
-    --scene extinguisher \
+    --scene pikachu \
     --index 2 \
     --n_steps 10000 \
     --lr 0.04 \
