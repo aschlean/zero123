@@ -78,7 +78,7 @@ class SJC(BaseConf):
         blend_bg_texture=False, bg_texture_hw=4,
         bbox_len=1.0
     )
-    pose:       PoseConfig = PoseConfig(rend_hw=16, FoV=49.1, R=2.0)
+    pose:       PoseConfig = PoseConfig(rend_hw=32, FoV=49.1, R=2.0)
 
     emptiness_scale:    int = 10
     emptiness_weight:   int = 0
@@ -347,7 +347,7 @@ def render_one_view(vox, aabb, H, W, K, pose, return_w=False):
     rgbs, depth, weights = render_ray_bundle(vox, ro, rd, t_min, t_max)
 
     rgbs = rearrange(rgbs, "(h w) c -> 1 c h w", h=H, w=W)
-    depth = rearrange(depth, "(h w) 1 -> h w", h=H, w=W)
+    #depth = rearrange(depth, "(h w) 1 -> h w", h=H, w=W)
     weights = rearrange(weights, "N (h w) 1 -> N h w", h=H, w=W)
     if return_w:
         return rgbs, depth, weights
