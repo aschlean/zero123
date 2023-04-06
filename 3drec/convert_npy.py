@@ -13,9 +13,9 @@ args = parser.parse_args()
 
 def main():
     if args.path is None:
-            npy_path = os.path.dirname(__file__)+'/experiments/exp_wild/depth/'
-        else:
-            npy_path = os.path.dirname(__file__)+args.path
+        npy_path = os.path.dirname(__file__)+'/experiments/exp_wild/depth/'
+    else:
+        npy_path = os.path.dirname(__file__)+args.path
     def convert_npy(npy_path, steps):
         np.set_printoptions(threshold=sys.maxsize)
         if not args.onebyone:
